@@ -1,11 +1,18 @@
 # Object detection via FastAPI
 
-Aim: AI-driven object detection via FastAPI (on COCO image dataset)
+[![](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/cvachet/object-detection-yolos-api)](https://hub.docker.com/repository/docker/cvachet/object-detection-yolos-api)
 
-Machine learning models:
+![example workflow](https://github.com/clementsan/object_detection_yolos_api/actions/workflows/ci_python.yml/badge.svg)
+![example workflow](https://github.com/clementsan/object_detection_yolos_api/actions/workflows/publish_docker_image.yml/badge.svg)
+
+**Aim:** AI-driven object detection via FastAPI (on COCO image dataset)
+
+**Machine learning models:**
  - hustvl/yolos-tiny
  - hustvl/yolos-small
 
+-----
 ### Table of contents:
  - [Direct execution](#1-direct-execution)
    - [Run FastAPI interface](#11-run-fastapi-interface)
@@ -17,7 +24,7 @@ Machine learning models:
    - [Run query via API](#22-run-query-via-api)
  - [Deployment on Docker hub](#3-deployment-on-docker-hub)
  - [MLOps pipeline via GitHub actions](#4-mlops-pipeline-via-github-actions)
-
+----
 
 ## 1. Direct execution
 
@@ -103,4 +110,4 @@ Github actions were created to enable Continuous Integration (CI) and Continuous
 
 YAML files:
  - Python testing suite: [ci_python.yml](.github/workflows/ci_python.yml)
- - Pushing to docker: [publish_docker_image.yaml](.github/workflows/publish_docker_image.yaml)
+ - Pushing to docker: [publish_docker_image.yml](.github/workflows/publish_docker_image.yml)
